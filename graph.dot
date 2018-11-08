@@ -1,0 +1,19 @@
+digraph {
+	graph [overlap=false];
+	root="example.com/hello";
+	node [  shape = plaintext, fontname = "Helvetica" ];
+	"example.com/hello" [style = filled, fillcolor = "#E94762"];
+"example.com/hello" -> "github.com/go-modules-by-example-forks/incomplete"
+"example.com/hello" -> "github.com/kr/pretty"
+"example.com/hello" -> "github.com/sirupsen/logrus"
+"example.com/hello" -> "golang.org/x/tools"
+"github.com/kr/pretty" -> "github.com/kr/text"
+"github.com/kr/text" -> "github.com/kr/pty"
+"github.com/sirupsen/logrus" -> "github.com/davecgh/go-spew"
+"github.com/sirupsen/logrus" -> "github.com/konsorten/go-windows-terminal-sequences"
+"github.com/sirupsen/logrus" -> "github.com/pmezard/go-difflib"
+"github.com/sirupsen/logrus" -> "github.com/stretchr/objx"
+"github.com/sirupsen/logrus" -> "github.com/stretchr/testify"
+"github.com/sirupsen/logrus" -> "golang.org/x/crypto"
+"github.com/sirupsen/logrus" -> "golang.org/x/sys"
+}
